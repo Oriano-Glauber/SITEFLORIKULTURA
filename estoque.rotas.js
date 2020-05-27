@@ -21,9 +21,9 @@ router.get('/listarpordatacompra/:data_de_compra', function(req, res){
     res.json('lista do estoque com a data de compra')
 })
 
-//localhost:3000/api/estoque/listarpordatacompra
-router.post('/inserirnovacompra', function(req, res){
-    res.json('novas compras inseridas')
+//localhost:3000/api/estoque/listarporpreço
+router.get('/listarporpreço/:preço', function(req, res){
+    res.json('lista do estoque com esse preço')
 })
 
 module.exports = router
