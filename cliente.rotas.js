@@ -21,4 +21,9 @@ router.get('/listarporcpf/:cpf', function(req, res){
     res.json('lista de clientes com este CPF:')
 })
 
+//localhost:3000/api/cliente/inserirnovocliente
+router.post('/inserirnovocliente', function(req, res){
+    res.json('clientes novos inseridos')
+})
+
 module.exports = router
