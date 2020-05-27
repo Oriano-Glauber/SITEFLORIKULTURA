@@ -4,7 +4,9 @@ var router = express.Router()
 
 //localhost:3000/api/fornecedor/listarfornecedor
 router.get('/listarfornecedor', function(req, res){
-    res.json('lista de fornecedores:')
+    res.json('Oriano Glauber Pai, orianoglauber@gmail.com')
+    res.json('Oriano Glauber Junior, orianojunior@gmail.com')
+    res.json('Oriano Glauber Neto, orianoneto@gmail.com')
 })
 
 //localhost:3000/api/fornecedor/listarnomefornec
