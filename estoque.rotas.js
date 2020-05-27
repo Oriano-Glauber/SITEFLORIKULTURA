@@ -22,7 +22,7 @@ router.get('/listarpordatacompra/:data_de_compra', function(req, res){
 })
 
 //localhost:3000/api/estoque/listarpordatacompra
-router.put('/inserirnovacompra', function(req, res){
+router.post('/inserirnovacompra', function(req, res){
     res.json('novas compras inseridas')
 })
 
