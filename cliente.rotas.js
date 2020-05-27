@@ -6,19 +6,19 @@ router.get('/listarclientes', function(req, res){
     res.json('lista de clientes')
 })
 
-//localhost:3000/api/listarpornome/lucas
-router.get('/listarpornome/:nome', function(req, res){
-    res.json('lista de clientes com este nome:')
+//localhost:3000/api/inserirnome 
+router.post('/inserirnome', function(req, res){
+    res.json('nomes novos inseridos')
 })
 
-//localhost:3000/api/cliente/listarportelefone/41992431403
-router.get('/listarportelefone/:telefone', function(req, res){
-    res.json('lista de clientes com este telefone:')
+//localhost:3000/api/cliente/inserirtelefone
+router.post('/inserirtelefone', function(req, res){
+    res.json('telefones novos inseridos')
 })
 
-//localhost:3000/api/cliente/listarporcpf/13283344906
-router.get('/listarporcpf/:cpf', function(req, res){
-    res.json('lista de clientes com este CPF:')
+//localhost:3000/api/cliente/inserircpf
+router.post('/inserircpf', function(req, res){
+    res.json('novos cpfs inseridos')
 })
 
 //localhost:3000/api/cliente/inserirnovocliente
