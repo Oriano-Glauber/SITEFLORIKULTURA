@@ -11,7 +11,9 @@ router.get('/listarfornecedor', function(req, res){
 
 //localhost:3000/api/fornecedor/listarnomefornec
 router.get('/listarpornomefornec/:nomefornec', function(req, res){
-    res.json('lista de fornecedores com este nome:')
+    res.json('Oriano Glauber')
+    res.json('Oriano Glauber Junior')
+    res.json('Oriano Glauber Neto')
 })
 
 //localhost:3000/api/fornecedor/listarporemail
