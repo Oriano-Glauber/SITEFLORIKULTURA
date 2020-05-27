@@ -1,24 +1,25 @@
 const express = require('express')
 var router = express.Router()
 
-//localhost:3000/api/cliente/listarclientes
-router.get('/listarclientes', function(req, res){
-    res.json('lista de clientes')
+//localhost:3000/api/listar/vendas
+router.get('/listarvendas', function(req, res){
+    res.json('lista de vendas')
 })
 
-//localhost:3000/api/listarpornome/lucas
-router.get('/listarpornome/:nome', function(req, res){
-    res.json('lista de clientes com este nome:')
+//localhost:3000/api/vendas/listadeprodutosvendidos
+router.get('/listarprodutosvendidos', function(req, res){
+    res.json('lista de produtos vendidos desse modelo')
 })
 
-//localhost:3000/api/cliente/listarportelefone/41992431403
-router.get('/listarportelefone/:telefone', function(req, res){
-    res.json('lista de clientes com este telefone:')
+//localhost:3000/api/vendas/listapordatadevenda
+router.get('/listarpordatadevenda/:data_de_venda', function(req, res){
+    res.json('lista de pordutos vendidos nessa data')
 })
 
-//localhost:3000/api/cliente/listarporcpf/13283344906
-router.get('/listarporcpf/:cpf', function(req, res){
-    res.json('lista de clientes com este CPF:')
+//localhost:3000/api/vendas/listaporcpfcomprador
+router.get('/listarporcpfcomprador/:cpf_comprador', function(req, res){
+    res.json('lista de produtos comprados com esse CPF')
 })
+
 
 module.exports = router
