@@ -8,24 +8,24 @@ router.get('/listarclientes', function(req, res){
     res.json('Marco Antônio Storrer Weber: R. Jacob Valenga 2771, 83305-005,41988778962, PR, marcoweber0405@gmail.com')
 })
 
-//localhost:3000/api/inserirnome 
-router.post('/inserirnome', function(req, res){
-    res.json('nomes novos inseridos')
+//localhost:3000/api/listarnome
+router.get('/listarnome/:nome', function(req, res){
+    res.json('lista de clientes pelo nome')
 })
 
-//localhost:3000/api/cliente/inserirtelefone
-router.post('/inserirtelefone', function(req, res){
-    res.json('telefones novos inseridos')
+//localhost:3000/api/cliente/listartelefone
+router.get('/listarportelefone/:telefone', function(req, res){
+    res.json('lista de cliente com esse telefone')
 })
 
-//localhost:3000/api/cliente/inserircpf
-router.post('/inserircpf', function(req, res){
-    res.json('novos cpfs inseridos')
+//localhost:3000/api/cliente/listarporcpftes 
+router.get('/listarporcpf/:CPF', function(req, res){
+    res.json('lista dos clientes com esse cpf')
 })
 
-//localhost:3000/api/cliente/inserirnovocliente
-router.post('/inserirnovocliente', function(req, res){
-    res.json('clientes novos inseridos')
+//localhost:3000/api/cliente/listaporCEP
+router.get('/listarporCEP/: CEP', function(req, res){
+    res.json('lista de clientes com esse CEP')
 })
 
 module.exports = router
