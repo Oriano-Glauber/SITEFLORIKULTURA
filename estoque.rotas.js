@@ -1,24 +1,29 @@
 const express = require('express')
 var router = express.Router()
 
-//localhost:3000/api/cliente/listarclientes
-router.get('/listarclientes', function(req, res){
-    res.json('lista de clientes')
+//localhost:3000/api/estoque/listarestoque
+router.get('/listarestoque', function(req, res){
+    res.json('lista do estoque')
 })
 
-//localhost:3000/api/listarpornome/lucas
-router.get('/listarpornome/:nome', function(req, res){
-    res.json('lista de clientes com este nome:')
+//localhost:3000/api/estoque/listarcodigodoproduto
+router.get('/listarcodigodoproduto/:codigo_produto', function(req, res){
+    res.json('lista do estoque com o código do produto')
 })
 
-//localhost:3000/api/cliente/listarportelefone/41992431403
-router.get('/listarportelefone/:telefone', function(req, res){
-    res.json('lista de clientes com este telefone:')
+//localhost:3000/api/estoque/listarporquantidade
+router.get('/listarporquantidade/:quantidade_produto', function(req, res){
+    res.json('lista do estoque com a quantidade do produto')
 })
 
-//localhost:3000/api/cliente/listarporcpf/13283344906
-router.get('/listarporcpf/:cpf', function(req, res){
-    res.json('lista de clientes com este CPF:')
+//localhost:3000/api/estoque/listarpordatacompra
+router.get('/listarpordatacompra/:data_de_compra', function(req, res){
+    res.json('lista do estoque com a data de compra')
+})
+
+//localhost:3000/api/estoque/listarpordatacompra
+router.put('/inserirnovacompra', function(req, res){
+    res.json('novas compras inseridas')
 })
 
 module.exports = router
