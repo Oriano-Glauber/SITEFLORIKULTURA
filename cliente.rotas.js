@@ -4,6 +4,7 @@ var router = express.Router()
 //localhost:3000/api/cliente/listarclientes
 router.get('/listarclientes', function(req, res){
     res.json('lista de clientes')
+    res.json('Lucas Vilar: Estada das Olarias 550, 8263-160, 41992431403, PR, lukviolar.lv@gmail.com')
 })
 
 //localhost:3000/api/inserirnome 
